@@ -1,0 +1,30 @@
+@import '../sass/fonts.scss';
+@import '../sass/wariables.scss';
+@import '../sass/header.scss';
+@import '../sass/features.scss';
+@import '../sass/persons.scss';
+@import '../sass/download.scss';
+@import '../sass/footer.scss';
+@import '../sass/footer__two.scss';
+@import '../sass/pictures.scss';
+@import '../sass/slider.scss';
+
+@import '../sass/mixins.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Raleway' sans-serif;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+}

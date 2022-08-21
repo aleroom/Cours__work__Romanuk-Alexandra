@@ -1,0 +1,36 @@
+@import '../sass/mixins.scss';
+
+#download {
+    padding: 70px 0;
+}
+.down__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.down__title {
+    margin-bottom: 20px;
+}
+.down__title h3{
+    text-align: center;
+   @include down__title;
+}
+.down__descr {
+    margin-bottom: 60px;
+}
+.down__descr span{
+    @include down__descr;
+}
+
+@media (max-width:450px) {
+    .inner__btn {
+        width: 82vw;
+}
+    .down__title h3 {
+        text-align: center;
+    }
+    .down__descr span {
+        text-align: center;
+}
+}

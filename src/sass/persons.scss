@@ -1,0 +1,112 @@
+@import '../sass/mixins.scss';
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css);
+
+#persons {
+    padding: 100px 0;
+}
+
+.persons__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.persons__card {
+    width: 22%;
+    margin: 0 15px;
+}
+/*.persons__content {
+}*/
+.persons__img {
+    margin-bottom: 20px;
+    & img {
+        width: 240px;
+        height: 270px;
+        object-position: center;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}
+
+.persons__name {
+    margin-bottom: 5px;
+}
+.persons__name span {
+    @include persons__name;
+}
+
+.persons__work {
+    margin-bottom: 15px;
+}
+.persons__work span {
+    @include work;
+}
+.persons__text span {
+    @include persons__text;
+}
+.persons__text {
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+
+.persons__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0 10px;
+    
+}
+.fa-brands {
+    color: $_logo;
+}
+.facebook, .twitter, .instagram {
+    font-size: 17px;
+    border: 1px solid $_logo;
+    padding: 7px 10px;
+}
+.facebook i:hover {
+    color: $_facebook;
+ }
+ .twitter i:hover {
+    color: $_twitter;
+ }
+ .instagram i:hover {
+    color: $_instagram;
+    
+ }
+
+ @media (max-width:920px){
+    .persons__wrap {
+        flex-flow: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+ }
+ .persons__card {
+    width: 50%;
+    margin-bottom: 50px;
+
+ }
+ .persons__card:last-child {
+    margin-bottom: 0;
+ }
+}
+@media (max-width:550px) {
+    .persons__card {
+        width: 70%;
+}
+    .persons__text p{
+        font-size: 20px;
+    }
+    .persons__name span {
+        font-size: 32px;
+    }
+    .persons__work span {
+        font-size: 24px;
+    }
+}

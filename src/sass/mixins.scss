@@ -1,0 +1,167 @@
+
+@mixin nav {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+@mixin h1 {
+    font-style: Black;
+    font-size: 60px;
+    line-height: 75px;
+    line-height: 100%;
+    text-align: center;
+    color:  $_white;
+    text-transform: uppercase;
+    
+}
+@mixin inner__descr {
+    font-style: 'Regular';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color:  $_white;
+}
+@mixin inner_btn {
+    font-size: 20px;
+    text-align: center;
+    color:  $_white;
+    text-transform: uppercase;
+    font-weight: 900px;
+    text-align: center;
+}
+
+@mixin card__title {
+   
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-align: center;
+    text-transform: uppercase;
+    object-position: center;
+    color: $_dark-grey;
+}
+
+@mixin card__text{
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $_light-grey;
+} 
+@mixin persons__name{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: $_dark-grey;
+    }
+
+    @mixin work{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $_18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: $normal_red;
+    }
+    @mixin persons__text {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $_18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: $_light-grey;
+    }
+
+@mixin down__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 30px;
+    color:  $_black;
+    }
+@mixin down__descr {
+    font-family: 'Raleway';
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color:  $_black;
+}
+
+@mixin location__title{
+    font-family: 'Raleway';
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: $_white;
+}
+@mixin location__descr {
+    font-family: 'Raleway';
+    font-size: 16px;
+    display: flex;
+    color:$_white;
+    
+}
+
+@mixin footer__two {
+    font-family: 'Raleway';
+    line-height: 21px;
+    text-align: center;
+    color: $_text-footer;
+}
+
+@mixin pic {
+    width: 30%;
+}
+
+
+@mixin item-hover {
+    font-weight: 900;
+    font-size: 1.4rem;
+    line-height: 28px;
+   
+    text-transform: uppercase;
+    color: $_white;
+}
+
+@mixin hover-span {
+    
+    font-weight: 400;
+    font-size: 1,125rem;
+    line-height: 21px;
+    color: $_white;
+}
+
+@mixin slider__text {
+    font-family: 'Cardo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: $_white;
+}
+@mixin slider__span {
+    font-family: 'Raleway';
+    font-style: normal;
+    line-height: 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $_white;
+}

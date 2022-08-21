@@ -1,0 +1,90 @@
+@import '../sass/mixins.scss';
+
+#features {
+    padding: 117px 10px;
+}
+
+.features__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+    gap: 72px 0;
+   
+}
+
+.card {
+   width: 30%;
+   margin: 0 15px; 
+   &__content {
+    padding: 10px;
+    }
+   &__img {
+    margin: 0 auto 30px;
+    text-align: center;
+
+    } 
+   &__img  img {
+    width: 100px;
+    height: 100px;
+    } 
+   &__title {
+   
+    margin-bottom: 20px;
+} 
+   &__title h3{
+    padding: 10px 20px;
+    @include card__title;
+    
+
+} 
+    &__text {
+        padding: 5px;
+
+    }
+    &__text p{
+        @include card__text;
+        
+    } 
+
+}
+
+
+
+
+
+
+@media (max-width: 920px){
+    .container {
+        width: 90%;
+    }
+   .features__wrap {
+    display: flex;
+    justify-content: center;
+   } 
+   .card {
+    width: 40%;
+   }
+}
+@media (max-width: 640px){
+    .container {
+        width: 90%;
+    }
+    .features__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       } 
+    .card {
+        width: 70%;
+    }
+    
+}
+@media (max-width: 320px){
+    .container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,146 @@
+@import '../sass/mixins.scss';
+
+/*
+.slider__wrap {
+    display: block;
+    margin: auto;
+    width: 100%;
+    display: flex;
+   
+}
+.slider__wrap-left {
+    width: 55%;
+}
+.slider__wrap-left img {
+    width: 100%;
+   
+}
+
+.slider__wrap-right {
+    width: 45%;
+    background-color: #5C3249;
+}
+.right__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider__text {
+    display: block;
+    padding: 30px 40px;
+    text-align: center;
+    
+    @include slider__text;
+}
+.slider__span {
+    display: block;
+    padding: 0 40px;
+
+    @include slider__span;
+}
+
+.input {
+    margin-top: 30px;
+    position: relative;
+	text-align: center;
+}
+@media (max-width:850px){
+    .slider__wrap {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+}
+.slider__wrap-left {
+    width: 100%;
+}
+.slider__wrap-left img {
+    width: 100%;
+   
+}
+
+.slider__wrap-right {
+    width: 100%;
+}
+}*/
+
+
+
+#slider {
+    width: 100%;
+    padding: 57px 0;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -31px;
+  }
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background-color: $_white;
+    border: 1px rgba(126, 93, 111, 1) solid;
+    transition: 0.2s;
+    &:hover {
+      transition: 0.2s;
+      background-color: rgba(126, 93, 111, 1);
+      opacity: 1;
+    }
+  }
+  
+  .testimonial_slider {
+    position: relative;
+  }
+  .testimonial_container {
+    max-width: 1510px;
+    margin: auto;
+    overflow: hidden;
+    height:490px;
+  }
+  .testimonial_slide {
+    display: flex;
+  }
+  .slider_img {
+    width: 50%;
+    height: 490px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  
+  .slider_text {
+    width: 50%;
+    height: 490px;
+    background-color: rgba(92, 50, 73, 1);
+    text-align: start;
+    padding: 10% 7% 0 10%;
+    p {
+      font-family: 'Cardo', sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 48px;
+      color: $_white;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+    span {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: $_13px;
+      line-height: 15px;
+      color: $_white;
+      text-transform: uppercase;
+    }
+  }
+  
