@@ -78,7 +78,7 @@
     
  }
 
- @media (max-width:920px){
+@media (max-width:950px){
     .persons__wrap {
         flex-flow: wrap;
         flex-direction: column;
@@ -87,15 +87,32 @@
         display: flex;
 
  }
+ .persons__text {
+    font-size: 20px;
+ }
  .persons__card {
-    width: 50%;
-    margin-bottom: 50px;
+    width: 68vw;
+    text-align: center;
+    margin: 0 0 50px;
 
+ }
+ .persons__nav {
+    display: flex;
+    justify-content: center;
  }
  .persons__card:last-child {
     margin-bottom: 0;
  }
+ .persons__img img {
+    width: 68vw;
+    height: 57vh;
+    object-position: center;
+    overflow: hidden;
+    object-fit: cover;
+    }
 }
+
+
 @media (max-width:550px) {
     .persons__card {
         width: 70%;

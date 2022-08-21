@@ -27,6 +27,10 @@
 }
 }
 @media (max-width:650px){
+    .location__descr {
+        display: flex;
+        justify-content: center;
+    }
     .info__text {
         width: 70%;
         text-align: center;
