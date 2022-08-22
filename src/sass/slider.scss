@@ -1,73 +1,5 @@
 @import '../sass/mixins.scss';
 
-/*
-.slider__wrap {
-    display: block;
-    margin: auto;
-    width: 100%;
-    display: flex;
-   
-}
-.slider__wrap-left {
-    width: 55%;
-}
-.slider__wrap-left img {
-    width: 100%;
-   
-}
-
-.slider__wrap-right {
-    width: 45%;
-    background-color: #5C3249;
-}
-.right__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.slider__text {
-    display: block;
-    padding: 30px 40px;
-    text-align: center;
-    
-    @include slider__text;
-}
-.slider__span {
-    display: block;
-    padding: 0 40px;
-
-    @include slider__span;
-}
-
-.input {
-    margin-top: 30px;
-    position: relative;
-	text-align: center;
-}
-@media (max-width:850px){
-    .slider__wrap {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    
-}
-.slider__wrap-left {
-    width: 100%;
-}
-.slider__wrap-left img {
-    width: 100%;
-   
-}
-
-.slider__wrap-right {
-    width: 100%;
-}
-}*/
-
-
 
 #slider {
     width: 100%;
@@ -88,9 +20,9 @@
     height: 14px;
     background-color: $_white;
     border: 1px rgba(126, 93, 111, 1) solid;
-    transition: 0.2s;
+    transition: 0.25s;
     &:hover {
-      transition: 0.2s;
+      transition: 0.25s;
       background-color: rgba(126, 93, 111, 1);
       opacity: 1;
     }
@@ -122,7 +54,7 @@
   .slider_text {
     width: 50%;
     height: 490px;
-    background-color: rgba(92, 50, 73, 1);
+    background-color: rgb(78, 50, 66);
     text-align: start;
     padding: 10% 7% 0 10%;
     p {
